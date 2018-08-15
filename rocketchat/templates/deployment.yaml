@@ -37,7 +37,7 @@ spec:
         {{ end }}
         {{ if .Values.host }}
         - name: ROOT_URL
-          value: https://{{ .Values.host }}
+          value: https://{{ .Values.host }}{{ .Values.ingress.path }}
         {{ end }}
         - name: MAIL_URL
           valueFrom:

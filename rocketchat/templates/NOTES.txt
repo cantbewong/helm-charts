@@ -18,7 +18,7 @@ To trail the logs for the Rocket.Chat pod run the following:
 
 Rocket.Chat will be available at the URL:
 
-- http://{{ .Values.host }}
+- http://{{ .Values.host }}{{ .Values.ingress.path }}
 {{ else }}
 
 To expose Rocket.Chat via an Ingress you need to set host and enable ingress.
