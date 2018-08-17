@@ -89,12 +89,12 @@ persistence:
 ### ref : http://kubernetes.io/docs/user-guide/ingress/
 ###
 ingress:
-  ## Set to true to enable ingress record generation
+  ## enabled is set to true to enable ingress record generation
   enabled: false
 
   path: /
 
-  ## Set this to true in order to enable TLS on the ingress record
+  ## tls is set to true in order to enable TLS on the ingress record
   tls: false
 
   ## Ingress annotations done as key:value pairs
